@@ -70,7 +70,7 @@ graph TD
 
 ```mermaid
 graph LR
-    A[.NET 7] --> B[ASP.NET Core]
+    A[.NET 8] --> B[ASP.NET Core]
     B --> C[Entity Framework Core]
     B --> D[Ocelot]
     B --> E[Polly]
