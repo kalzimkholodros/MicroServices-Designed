@@ -5,7 +5,8 @@
 This project implements a modern e-commerce platform using a microservices architecture. The system is designed to be scalable, resilient, and maintainable, following domain-driven design principles and event-driven communication patterns.
 
 ## Architecture
-![Uploading untitled (12).png…]()
+
+![Ekran görüntüsü 2025-05-03 003843](https://github.com/user-attachments/assets/edb9fc89-55b3-447a-82e3-ad06288e4feb)
 
 
 ## Service Components
