@@ -5,30 +5,8 @@
 This project implements a modern e-commerce platform using a microservices architecture. The system is designed to be scalable, resilient, and maintainable, following domain-driven design principles and event-driven communication patterns.
 
 ## Architecture
+![Uploading untitled (12).png…]()
 
-```mermaid
-graph TD
-    Client[Client] --> Ocelot[Ocelot API Gateway]
-    Client --> Aggregator[Aggregator Gateway]
-    
-    Ocelot --> Basket[Basket Service]
-    Ocelot --> Product[Product Service]
-    Ocelot --> Order[Order Service]
-    Ocelot --> Payment[Payment Service]
-    
-    Aggregator --> Order
-    Aggregator --> Payment
-    Aggregator --> Product
-    
-    Basket --> Redis[(Redis Cache)]
-    Order --> Postgres[(PostgreSQL)]
-    Payment --> Postgres
-    Product --> Postgres
-    
-    Order --> RabbitMQ[RabbitMQ]
-    Payment --> RabbitMQ
-    Product --> RabbitMQ
-```
 
 ## Service Components
 
